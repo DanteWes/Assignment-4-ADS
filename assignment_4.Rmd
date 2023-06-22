@@ -32,7 +32,9 @@ This interpretation will not be graded, but a Github shows the contributors to a
 
 **Question 1.1**: Fill in the __github username__ of the class mate to whose repository you have contributed. 
 
-[Fill in here]
+KietL14
+
+https://github.com/KietL14/Assignment4/blob/main/assignment_4.Rmd
 
 ### Part 2: Analyzing various linear models
 
@@ -59,7 +61,6 @@ library(modelsummary); library(tidyverse)
 data <- GrowthSW %>%
   mutate(treat = ifelse(revolutions > 0, "More than 0 Revolutions", "0 Revolutions"))
 
-data
 
 data_sum <- datasummary(growth + rgdp60 ~ treat*(mean + median + sd + min + max)  ,
             data = data)
@@ -67,7 +68,9 @@ data_sum
 
 ```
 
-**Designated place**: type one or two sentences describing this table of a fellow student below. For example, comment on the mean and median growth of both groups. Then stage, commit and push it to their github repository. 
+**Designated place**: type one or two sentences describing this table of a fellow student below. For example, comment on the mean and median growth of both groups. Then stage, commit and push it to their github repository.
+
+In the table you can see that the mean and the median are higher when countries did not have any revolutions. But, relatively seen they are both quite close to each other. But what is interesting is that the highest growth is from a country that has suffered from a revolution. 
 
 
 ### Part 3: Make a table summarizing reressions using modelsummary and kable
